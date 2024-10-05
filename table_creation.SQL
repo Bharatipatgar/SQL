@@ -7,8 +7,7 @@ create table Student.Persons
    Address varchar(255)
    
    )
-   select * from Student.Persons
-use Student ;
+   use Student ;
 INSERT INTO Student.Persons(PersonID, FirstName, stu_address )values(1,'ashwini',10);
 INSERT INTO Student.Persons(PersonID, FirstName, stu_address )values(2,'ashwini',20);
 INSERT INTO Student.Persons(PersonID, FirstName, stu_address )values(3,'nandu',30);
@@ -18,17 +17,7 @@ INSERT INTO Student.Persons(PersonID, FirstName, stu_address )values(5,'deepu',3
 SELECT PersonID, FirstName FROM Student.Persons WHERE FirstName='deepu';
 SELECT PersonID, FirstName FROM Student.Persons WHERE stu_address='30';
 
-use Student ;
-INSERT INTO Student.Persons(PersonID, FirstName, stu_address )values(1,'ashwini',10);
-INSERT INTO Student.Persons(PersonID, FirstName, stu_address )values(2,'ashwini',20);
-INSERT INTO Student.Persons(PersonID, FirstName, stu_address )values(3,'nandu',30);
-INSERT INTO Student.Persons(PersonID, FirstName, stu_address )values(4,'indu',30);
-INSERT INTO Student.Persons(PersonID, FirstName, stu_address )values(5,'deepu',30);
-
-SELECT PersonID, FirstName FROM Student.Persons WHERE FirstName='deepu';
-SELECT PersonID, FirstName FROM Student.Persons WHERE stu_address='30';
-        
-    use Student 
+use Student 
     create table Student.Student_data
     (
     stud_id int,
@@ -38,7 +27,7 @@ SELECT PersonID, FirstName FROM Student.Persons WHERE stu_address='30';
     age int
     )
     
-SELECT * FROM Student.Student_data;
+/*SELECT * Student.Student_data;*/
 INSERT INTO Student.Student_data(stud_id,Name,phone, age)values(1,'ashwini','11111',21);
 INSERT INTO Student.Student_data(stud_id,Name,phone, age)values(2,'nandu','22222',22);
 INSERT INTO Student.Student_data(stud_id,Name,phone, age)values(3,'vaish','33333',23);
@@ -99,5 +88,4 @@ INSERT INTO  Student.Books (book_id, title, author, publication_year)
  select * from Student.Books
 SELECT book_id, title FROM Student.Books  WHERE author='Camus';
 SELECT author, publication_year FROM Student.Books  WHERE book_id=7; 
- 
  
